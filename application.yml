@@ -10,4 +10,16 @@
 #         - '*service'
 
 
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/production?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        
 
